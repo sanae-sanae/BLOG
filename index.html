@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Blog</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+    <title>Professional Blog</title>
+   
+</head>
+<body>
+    <header>
+        <h1>Professional Blog</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">Sign Up</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cards">
+
+            <a href="technologie.html"><div class="card" data-bg="https://www.shutterstock.com/shutterstock/photos/2523230491/display_1500/stock-photo-abstract-computer-technology-blue-background-banner-futuristic-business-data-technology-modern-2523230491.jpg" onclick="location.href='articles.html'">
+                <img src="https://www.shutterstock.com/shutterstock/photos/2284126663/display_1500/stock-photo-data-science-and-big-data-technology-scientist-computing-analysing-and-visualizing-complex-data-2284126663.jpg" alt="Technologie">
+                <h3>technologie</h3>
+            </div></a>
+            <a href="travel.html"><div class="card" data-bg="https://as2.ftcdn.net/v2/jpg/00/65/48/25/1000_F_65482539_C0ZozE5gUjCafz7Xq98WB4dW6LAhqKfs.jpg" onclick="location.href='articles.html'">
+                <img src="https://as1.ftcdn.net/v2/jpg/02/14/82/32/1000_F_214823294_lvnwbyvQWeP8dDyWIXs9AUH3m1vBfQ2H.jpg" alt="Travel">
+                <h3>travel</h3>
+            </div></a>
+            
+            <a href="culture.html"><div class="card" data-bg="https://as1.ftcdn.net/v2/jpg/04/54/50/84/1000_F_454508453_eQylVEA1UpxVbBwI76fUViLmmfQvIHsH.jpg" onclick="location.href='articles.html'">
+                <img src="https://as2.ftcdn.net/v2/jpg/01/27/67/69/1000_F_127676909_urNiayjgVuT4WOYAYw3vB7sErMTTYetJ.jpg" alt="Culture">
+                <h3>culture</h3>
+            </div></a>
+
+           <a href="gaming.html"><div class="card" data-bg="https://as1.ftcdn.net/v2/jpg/03/68/66/54/1000_F_368665493_6h58DvHKWytPhe7GDY7o0LAnD1Wga20X.jpg" onclick="location.href='articles.html'">
+            <img src="https://as2.ftcdn.net/v2/jpg/04/42/21/53/1000_F_442215355_AjiR6ogucq3vPzjFAAEfwbPXYGqYVAap.jpg" alt="Gaming">
+            <h3>gaming</h3>
+        </div></a>
+            
+        <a href="sport.html"> <div class="card" data-bg="https://as1.ftcdn.net/v2/jpg/01/93/38/22/1000_F_193382260_WdTIbIkiDl3KsO79RVJZtvpZVrK2UjIr.jpg" onclick="location.href='articles.html'">
+            <img src="https://as1.ftcdn.net/v2/jpg/01/86/54/16/1000_F_186541625_49LM3W5rGdrkrZJTPxPVLa8ih9u6D808.jpg" alt="Sport">
+            <h3>Sport</h3>
+        </div></a>
+             </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Professional Blog. All rights reserved.</p>
+    </footer>
+
+    <script>
+        
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                document.body.style.backgroundImage = `url(${card.getAttribute('data-bg')})`;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                document.body.style.backgroundImage = '';
+            });
+        });
+    </script>
+</body>
+</html>
+
+

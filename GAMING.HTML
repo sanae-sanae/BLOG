@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            transition: background-color 0.5s ease;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 0.5rem;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .background-selector {
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+
+        .background-selector select {
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            overflow: hidden;
+            cursor: pointer;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 1rem 0;
+        }
+
+        .card p {
+            padding: 0 1rem 1rem;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        #other{
+            margin-left: 50px;
+        }
+        @media (max-width: 768px) {
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gaming</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#games">Top Games</a>
+            <a href="#tips">Gaming Tips</a>
+            <a href="#genres">Game Genres</a>
+        </nav>
+    </header>
+    <section class="background-selector">
+        <label for="background-select">Choose a Subject:</label>
+        <select id="background-select">
+            <option value="default">Default</option>
+            <option value="games">Top Games</option>
+            <option value="tips">Gaming Tips</option>
+            <option value="genres">Game Genres</option>
+        </select>
+    </section>
+
+    <main>
+        <section id="games">
+            <h2>Top Games</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://as2.ftcdn.net/v2/jpg/08/76/99/17/1000_F_876991719_4I8OPAcPk53HSYFnesTWQgTs8dV1rzi9.jpg" alt="Game 1">
+                    <h3>Game 1 </h3>
+                    <p>Immerse yourself in a fantastic world filled with adventure.</p>
+                </div>
+                <div class="card">
+                    <img src="https://as1.ftcdn.net/v2/jpg/09/60/74/04/1000_F_960740444_O96JUPqe0QQqZVe4QYI5GgJYDkgH2lCf.jpg" alt="Game 2">
+                    <h3>Game 2</h3>
+                    <p>Join your friends in epic battles and strategic gameplay.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tips">
+            <h2>Gaming Tips</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://as1.ftcdn.net/v2/jpg/02/85/90/44/1000_F_285904463_52tKiXp592qUhmg24eS3f4k1kGQSji3f.jpg" alt="Tip 1">
+                    <h3>Improving Your Skills</h3>
+                    <p>Learn techniques to enhance your gameplay and strategy.</p>
+                </div>
+                <div class="card">
+                    <img src="https://as1.ftcdn.net/v2/jpg/06/32/73/46/1000_F_632734616_0xs3wde0kc48vOOcohyLRR460c4wCFuD.jpg" alt="Tip 2">
+                    <h3>Best Gaming Gear</h3>
+                    <p>Discover essential equipment for a better gaming experience.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="genres">
+            <h2>Game Genres</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://as2.ftcdn.net/v2/jpg/05/55/82/51/1000_F_555825144_uwj46ckT8THX48VRYFdrhBQPL1hHnku5.jpg" alt="Action">
+                    <h3>Action Games</h3>
+                    <p>Experience thrilling gameplay with fast-paced action.</p>
+                </div>
+                <div class="card">
+                    <img src="https://as2.ftcdn.net/v2/jpg/06/15/94/63/1000_F_615946312_g0bFXcJLEsZEfD6pkxA1aof0fYPTbisA.jpg" alt="RPG">
+                    <h3>RPG Games</h3>
+                    <p>Dive into immersive stories and character development.</p>
+                </div>
+            </div>
+        </section>
+        <div id="other">
+            <h4>other articles:</h4>
+            <ul>
+                <a href="travel.html">
+                    <li>travel</li>
+                </a>
+                <a href="technologie.html">
+                    <li>technologie</li>
+                </a>
+                <a href="culture.html">
+                    <li>culture</li>
+                </a>
+                <a href="sport.html">
+                    <li>sport</li>
+                </a>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Gaming Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>
